@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>PICCIONI MORTI</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- HERO: immagine bruciante -->
+  <section id="hero">
+    <img src="assets/images/hero.jpg" alt="Hero Image" id="hero-img">
+    <div id="burn-overlay"></div>
+  </section>
+
+  <!-- COLLEZIONE USHANKA -->
+  <section id="collezione">
+    <h2>Collezione</h2>
+    <div class="prodotto" onclick="apriScheda('ushanka1')">
+      <img src="assets/images/ushanka1.jpg" alt="Ushanka 1">
+      <p>Ushanka “Colomba Marcia”</p>
+    </div>
+    <div class="prodotto" onclick="apriScheda('ushanka2')">
+      <img src="assets/images/ushanka2.jpg" alt="Ushanka 2">
+      <p>Ushanka “Asfalto Sanguinante”</p>
+    </div>
+  </section>
+
+  <!-- SCHEDA PRODOTTO (POPUP) -->
+  <div id="scheda-prodotto" class="hidden">
+    <div class="scheda-contenuto">
+      <span class="close" onclick="chiudiScheda()">X</span>
+      <h3 id="titolo-prodotto"></h3>
+      <p id="descrizione-prodotto"></p>
+      <ul id="info-prodotto">
+        <li><strong>Materiali:</strong> <span id="materiali"></span></li>
+        <li><strong>Manutenzione:</strong> <span id="manutenzione"></span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- FOOTER / CHECKOUT -->
+  <footer>
+    <p>&copy; 2025 PICCIONI MORTI</p>
+    <button onclick="window.location.href='https://tua-piattaforma-di-pagamento.com'">
+      Acquista Ora
+    </button>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
